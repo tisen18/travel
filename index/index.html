@@ -21,44 +21,52 @@
 <body class="bg-white text-gray-600">
 
     <!-- Navbar -->
-<header class=" fixed top-0 w-full z-50  transition-all duration-300">
-    <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
-      <h1 class="text-xl font-bold text-teal-600">Easy Bali Trip</h1>
-  
-      <!-- Hamburger -->
-      <butto title="" id="menu-btn" class="md:hidden text-teal-600 focus:outline-none text-2xl">
-        <i class="fas fa-bars"></i>
-      </butto>
-  
-      <!-- Menu Desktop -->
-      <nav class="hidden md:flex space-x-6">
-        <a href="#home" class="hover:text-teal-500 transition">Home</a>
-        <a href="#destinations" class="hover:text-teal-500 transition">Destinations</a>
-        <a href="#about" class="hover:text-teal-500 transition">About</a>
-        <a href="#packages" class="hover:text-teal-500 transition">Packages</a>
-        <a href="#activity" class="hover:text-teal-500 transition">Activity</a>
-        <a href="#contact" class="hover:text-teal-500 transition">Contact</a>
-      </nav>
-    </div>
-  
-    <!-- Mobile Menu -->
-    <div id="mobile-menu" class="md:hidden hidden flex-col bg-white px-4 pb-4">
-      <a href="#home" class="py-2 border-b hover:text-teal-500">Home</a>
-      <a href="#destinations" class="py-2 border-b hover:text-teal-500">Destinations</a>
-      <a href="#about" class="py-2 border-b hover:text-teal-500">About</a>
-      <a href="#packages" class="py-2 border-b hover:text-teal-500">Packages</a>
-      <a href="#activity" class="py-2 border-b hover:text-teal-500">Activity</a>
-      <a href="#contact" class="py-2 hover:text-teal-500">Contact</a>
-    </div>
-  </header>
-  
+    <header class="fixed top-0 w-full z-50 bg-white shadow transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+            <h1 class="text-xl font-bold text-teal-600">Easy Bali Trip</h1>
 
-    <!-- Home Section -->
+            <!-- Hamburger -->
+            <button title="button" id="menu-btn" class="md:hidden text-teal-600 focus:outline-none text-2xl">
+                <i class="fas fa-bars"></i>
+            </button>
+
+            <!-- Menu Desktop -->
+            <nav class="hidden md:flex space-x-6">
+                <a href="#home" class="text-black hover:text-teal-500 transition">Home</a>
+                <a href="#destinations" class="text-black hover:text-teal-500 transition">Destinations</a>
+                <a href="#about" class="text-black hover:text-teal-500 transition">About</a>
+                <a href="#packages" class="text-black hover:text-teal-500 transition">Packages</a>
+                <a href="#activity" class="text-black hover:text-teal-500 transition">Activity</a>
+                <a href="#contact" class="text-black hover:text-teal-500 transition">Contact</a>
+            </nav>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="md:hidden hidden flex-col bg-white px-4 pb-4">
+            <a href="#home" class="py-2 border-b text-black hover:text-teal-500">Home</a>
+            <a href="#destinations" class="py-2 border-b text-black hover:text-teal-500">Destinations</a>
+            <a href="#about" class="py-2 border-b text-black hover:text-teal-500">About</a>
+            <a href="#packages" class="py-2 border-b text-black hover:text-teal-500">Packages</a>
+            <a href="#activity" class="py-2 border-b text-black hover:text-teal-500">Activity</a>
+            <a href="#contact" class="py-2 border-b text-black hover:text-teal-500">Contact</a>
+        </div>
+    </header>
+
+
+
     <section id="home" class="relative h-screen flex items-center justify-center overflow-hidden">
-        <video autoplay loop muted class="absolute w-full h-full object-cover z-[-1]">
-            <source src="../assets/img/Background.mp4" />
-            Your browser does not support the video tag.
-        </video>
+        <div id="slideshow" class="absolute w-full h-full z-[-1]">
+            <div
+                class="slide absolute w-full h-full bg-cover bg-center transition-opacity duration-1000 opacity-100 bg-[url('../assets/img/ubud.jpg')]">
+            </div>
+            <div
+                class="slide absolute w-full h-full bg-cover bg-center transition-opacity duration-1000 opacity-0 bg-[url('../assets/img/nusapenida.jpg')]">
+            </div>
+            <div
+                class="slide absolute w-full h-full bg-cover bg-center transition-opacity duration-1000 opacity-0 bg-[url('../assets/img/kuta.jpg')]">
+            </div>
+        </div>
+
         <div class="p-6 rounded-md text-center text-white max-w-2xl z-10" data-aos="zoom-in">
             <h2 class="text-4xl md:text-5xl font-bold mb-4">Explore Bali With Us</h2>
             <p class="text-lg md:text-xl mb-6">Discover unforgettable holiday experiences with EasyBaliTrip</p>
@@ -69,7 +77,7 @@
     </section>
 
     <!-- Destinations -->
-    <section id="destinations" class="py-16 bg-gray-100 pt-15 scroll-mt-15" data-aos="fade-up">
+    <section id="destinations" class="py-16 bg-gray-100 pt-14 scroll-mt-15" data-aos="fade-up">
         <div class="max-w-7xl mx-auto px-4">
             <h2 class="text-3xl font-bold text-center text-teal-600 mb-10">Popular Destinations</h2>
 
@@ -107,33 +115,13 @@
                         </p>
                     </div>
                 </div>
-                <!-- Destination 4 -->
-                <div class="bg-white rounded-lg shadow-md overflow-hidden" data-aos="fade-up" data-aos-delay="300">
-                    <img src="../assets/img/kuta.jpg" alt="Kuta Beach"
-                        class="w-full h-56 object-cover transition duration-300 hover:scale-105" />
-                    <div class="p-4">
-                        <h3 class="text-xl font-semibold mb-2">Kuta Beach Sunset</h3>
-                        <p class="text-gray-600 text-sm">The best place to enjoy the sunset while relaxing on the beach.
-                        </p>
-                    </div>
-                </div>
-                <!-- Destination 5 -->
-                <div class="bg-white rounded-lg shadow-md overflow-hidden" data-aos="fade-up" data-aos-delay="300">
-                    <img src="../assets/img/kuta.jpg" alt="Kuta Beach"
-                        class="w-full h-56 object-cover transition duration-300 hover:scale-105" />
-                    <div class="p-4">
-                        <h3 class="text-xl font-semibold mb-2">Kuta Beach Sunset</h3>
-                        <p class="text-gray-600 text-sm">The best place to enjoy the sunset while relaxing on the beach.
-                        </p>
-                    </div>
-                </div>
             </div>
         </div>
     </section>
 
 
     <!-- About -->
-    <section id="about" class="py-16" data-aos="fade-up">
+    <section id="about" class="py-16 pt-14 scroll-mt-15" data-aos="fade-up">
         <div class="max-w-5xl mx-auto px-4 flex items-center justify-between space-x-8">
             <!-- Image Section -->
             <div class="flex-1">
@@ -154,7 +142,7 @@
 
 
     <!-- Packages -->
-    <section id="packages" class="py-16 bg-gray-100" data-aos="fade-up">
+    <section id="packages" class="py-16 bg-gray-100 scroll-mt-15" data-aos="fade-up">
         <div class="max-w-7xl mx-auto px-4">
             <h2 class="text-3xl font-bold text-center text-teal-600 mb-10">Travel Packages</h2>
             <div class="grid md:grid-cols-3 gap-8">
@@ -241,7 +229,7 @@
 
 
     <!-- Testimonials -->
-    <section class="py-16 bg-gray-100" data-aos="fade-up">
+    <section class="py-16 bg-gray-100 scroll-mt-15" data-aos="fade-up">
         <div class="max-w-8xl mx-auto px-4 text-center">
             <h2 class="text-3xl font-bold text-teal-600 mb-10">What Our Clients Say</h2>
             <!-- Swiper -->
@@ -292,7 +280,7 @@
 
 
     <!-- Contact -->
-    <section id="contact" class="py-16" data-aos="fade-up">
+    <section id="contact" class="py-16 scroll-mt-15" data-aos="fade-up">
         <div
             class="max-w-5xl mx-auto px-4 flex flex-col md:flex-row items-center justify-between space-y-8 md:space-y-0 md:space-x-8">
             <!-- Form Section -->
@@ -315,19 +303,19 @@
             <div class="flex-1">
                 <h3 class="text-xl font-bold text-teal-600 mb-4">Follow Us</h3>
                 <div class="flex space-x-6 justify-center md:justify-start">
-                    <a href="https://facebook.com" target="_blank" rel="noopener noreferrer"
+                    <a title="Facebook" href="https://facebook.com" target="_blank" rel="noopener noreferrer"
                         class="text-teal-600 hover:text-teal-700">
                         <i class="fab fa-facebook-f text-3xl"></i>
                     </a>
-                    <a href="https://twitter.com" target="_blank" rel="noopener noreferrer"
+                    <a title="Twitter" href="https://twitter.com" target="_blank" rel="noopener noreferrer"
                         class="text-teal-600 hover:text-teal-700">
                         <i class="fab fa-twitter text-3xl"></i>
                     </a>
-                    <a href="https://instagram.com" target="_blank" rel="noopener noreferrer"
+                    <a title="Instagram" href="https://instagram.com" target="_blank" rel="noopener noreferrer"
                         class="text-teal-600 hover:text-teal-700">
                         <i class="fab fa-instagram text-3xl"></i>
                     </a>
-                    <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer"
+                    <a title="LinkedIn" href="https://linkedin.com" target="_blank" rel="noopener noreferrer"
                         class="text-teal-600 hover:text-teal-700">
                         <i class="fab fa-linkedin-in text-3xl"></i>
                     </a>
@@ -399,6 +387,25 @@
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="../assets/script.js"></script>
+
+    <!-- <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const slides = document.querySelectorAll('#slideshow .slide');
+            let currentSlide = 0;
+
+            function showNextSlide() {
+                slides[currentSlide].classList.remove('opacity-100');
+                slides[currentSlide].classList.add('opacity-0');
+
+                currentSlide = (currentSlide + 1) % slides.length;
+
+                slides[currentSlide].classList.remove('opacity-0');
+                slides[currentSlide].classList.add('opacity-100');
+            }
+
+            setInterval(showNextSlide, 3000); // Change slide every 3 seconds
+        });
+    </script> -->
 
 </body>
 
