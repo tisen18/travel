@@ -50,3 +50,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   setInterval(showNextSlide, 3000); // Ganti slide tiap 3 detik
 });
+
+AOS.init({
+  duration: 800,
+});
