@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Easy Bali tour</title>
+    <link rel="stylesheet" href="assets/output.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+</head>
+
+<body class=" text-slate-600">
+
+    <!-- ================== NAVBAR ================== -->
+    <header id="navbar" class="fixed top-0 w-full z-50 bg-transparent transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+            <h1 id="h1-navbar" class="text-xl font-bold ">Easy Bali Tour</h1>
+
+            <!-- Hamburger -->
+            <button title="button" id="menu-btn" class="md:hidden text-blue-600 focus:outline-none text-2xl">
+                <i class="fas fa-bars"></i>
+            </button>
+
+            <!-- Desktop Menu -->
+            <nav class="hidden md:flex space-x-6">
+                <a href="#home" class="font-semibold hover:text-blue-500 transition">Home</a>
+                <a href="#destinations" class="font-semibold hover:text-blue-500 transition">Destinations</a>
+                <a href="menu.html" class="font-semibold hover:text-blue-500 transition">Packages</a>
+                <a href="menu.html" class="font-semibold hover:text-blue-500 transition">Activity</a>
+                <a href="galery.html" class="font-semibold hover:text-blue-500 transition">Galery</a>
+                <a href="contact.html" class="font-semibold hover:text-blue-500 transition">Contact</a>
+            </nav>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="md:hidden hidden flex-col bg-white px-4 pb-4">
+            <a href="#home" class="py-2 border-b hover:text-blue-500">Home</a>
+            <a href="#destinations" class="py-2 border-b hover:text-blue-500">Destinations</a>
+            <a href="menu.html" class="py-2 border-b hover:text-blue-500">Packages</a>
+            <a href="menu.html" class="py-2 border-b hover:text-blue-500">Activity</a>
+            <a href="galery.html" class="py-2 border-b hover:text-blue-500">Galery</a>
+            <a href="contact.html" class="py-2 border-b hover:text-blue-500">Contact</a>
+        </div>
+    </header>
+
+
+
+    <section id="home" class="relative h-screen flex items-center justify-center overflow-hidden">
+        <!-- Slideshow background -->
+        <div id="slideshow" class="absolute w-full h-full z-[-1]">
+            <!-- Overlay gelap -->
+            <div class="absolute inset-0 bg-black/60 z-10"></div>
+
+            <!-- Slide 1 -->
+            <div
+                class="slide absolute w-full h-full bg-cover bg-center transition-opacity duration-1000 opacity-100 bg-[url('assets/img/ubud.jpg')]">
+            </div>
+
+            <!-- Slide 2 -->
+            <div
+                class="slide absolute w-full h-full bg-cover bg-center transition-opacity duration-1000 opacity-0 bg-[url('assets/img/nusapenida.jpg')]">
+            </div>
+        </div>
+
+        <!-- Content -->
+        <div class="p-6 rounded-md text-center text-white max-w-5xl z-20" data-aos="zoom-in">
+            <h3 class="text-2xl mb-5">Easy Bali Tour</h3>
+            <h1 class="text-4xl md:text-5xl font-bold mb-4">Explore BALI Hidden Treasure's With Us</h1>
+            <p class="text-lg md:text-xl mb-6">
+                Discover unforgettable holiday experiences with Easy Bali tour.
+                Dive into the cultural heart of Bali with our specially curated Ubud tours.
+                From the stunning rice terraces to the serene temples, uncover the magic of Ubud's landscapes and
+                traditions.
+            </p>
+            <a href="#destinations"
+                class="bg-blue-500 hover:bg-blue-600 text-white px-6 py-3 rounded-lg transition duration-300">
+                View Destinations
+            </a>
+        </div>
+    </section>
+
+
+    <!-- Destinations -->
+    <section id="destinations" class="py-10 bg-gray-100 scroll-mt-15" data-aos="fade-up">
+        <div class="max-w-7xl mx-auto px-4">
+            <h4 class="text-center font-stretch-50% text-amber-600 text-lg mb-3">Place like Heaven</h4>
+            <h2 class="text-4xl font-bold text-center text-blue-600">Popular Destinations</h2>
+            <h4 class="text-center text-slate-600 text-lg my-5">Explore the best of Bali with our curated tours</h4>
+            <span class="block h-1 bg-blue-500 mx-auto my-10 w-1/2"></span>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Card -->
+                <div id="detail-card" class="detail-card bg-white rounded-2xl shadow-lg overflow-hidden flex flex-col h-[480px] cursor-pointer" data-aos="fade-up"
+                    data-aos-delay="100">
+                    <!-- Gambar -->
+                    <div class="h-1/2 w-full overflow-hidden">
+                        <img src="assets/img/ubud.jpg" alt="Ubud"
+                            class="w-full h-full object-cover transition duration-300 hover:scale-105" />
+                    </div>
+                    <!-- Konten -->
+                    <div class="flex flex-col flex-1 p-5 justify-between">
+                        <div>
+                            <h3 class="text-2xl font-bold text-slate-800 mb-2">Ubud Cultural Tour</h3>
+                            <p class="text-slate-600 text-base mb-4">
+                                Explore the calm vibes of Ubud with stunning rice fields & Balinese culture.
+                            </p>
+                            <div class="flex items-center justify-between mb-4">
+                                <div class="text-yellow-400 text-lg">⭐⭐⭐⭐☆</div>
+                                <div class="text-blue-600 font-bold text-lg">IDR 450.000</div>
+                            </div>
+                        </div>
+                        <button
+                            class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition duration-300 w-full">
+                            Book Now
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div id="detail-card" class="detail-card bg-white rounded-2xl shadow-lg overflow-hidden flex flex-col h-[480px] cursor-pointer" data-aos="fade-up"
+                    data-aos-delay="200">
+                    <div class="h-1/2 w-full overflow-hidden">
+                        <img src="assets/img/nusapenida.jpg" alt="Nusa Penida"
+                            class="w-full h-full object-cover transition duration-300 hover:scale-105" />
+                    </div>
+                    <div class="flex flex-col flex-1 p-5 justify-between">
+                        <div>
+                            <h3 class="text-2xl font-bold text-slate-800 mb-2">Nusa Penida Escape</h3>
+                            <p class="text-slate-600 text-base mb-4">
+                                Adventure to cliffs, turquoise beaches & iconic viewpoints.
+                            </p>
+                            <div class="flex items-center justify-between mb-4">
+                                <div class="text-yellow-400 text-lg">⭐⭐⭐⭐⭐</div>
+                                <div class="text-blue-600 font-bold text-lg">IDR 600.000</div>
+                            </div>
+                        </div>
+                        <button
+                            class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition duration-300 w-full">
+                            Book Now
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div id="detail-card" class="detail-card bg-white rounded-2xl shadow-lg overflow-hidden flex flex-col h-[480px] cursor-pointer" data-aos="fade-up"
+                    data-aos-delay="300">
+                    <div class="h-1/2 w-full overflow-hidden">
+                        <img src="assets/img/kuta.jpg" alt="Kuta Beach"
+                            class="w-full h-full object-cover transition duration-300 hover:scale-105" />
+                    </div>
+                    <div class="flex flex-col flex-1 p-5 justify-between">
+                        <div>
+                            <h3 class="text-2xl font-bold text-slate-800 mb-2">Kuta Beach Sunset</h3>
+                            <p class="text-slate-600 text-base mb-4">
+                                Enjoy golden sunsets and the buzz of Bali’s iconic beach.
+                            </p>
+                            <div class="flex items-center justify-between mb-4">
+                                <div class="text-yellow-400 text-lg">⭐⭐⭐⭐☆</div>
+                                <div class="text-blue-600 font-bold text-lg">IDR 300.000</div>
+                            </div>
+                        </div>
+                        <button
+                            class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition duration-300 w-full">
+                            Book Now
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- About -->
+    <section id="about" class="py-24 scroll-mt-15 bg-white" data-aos="fade-up">
+        <div
+            class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center md:items-start justify-between gap-10 relative">
+            <!-- Image Section -->
+            <div class="flex-1 w-full">
+                <img src="assets/img/about.png" alt="EasyBalitour"
+                    class="w-full h-auto max-h-[480px] object-cover rounded-xl shadow-lg" />
+            </div>
+
+            <!-- Text Section -->
+            <div class="flex-1 text-justify relative flex flex-col justify-between h-full">
+                <div>
+                    <h4 class="text-2xl font-semibold text-amber-600 mb-4">About Us</h4>
+                    <h2 class="text-4xl font-bold text-blue-600 mb-6">Easy Bali Tour</h2>
+                    <p class="text-slate-700 text-lg leading-relaxed mb-4">
+                        Easy Bali Tour is your ultimate partner in discovering the beauty and excitement of Bali.
+                        Specializing in Full Day Tours, Activities in Bali, and Nusa Penida Tours, we focus on creating
+                        unforgettable experiences, with a special emphasis on the cultural and natural wonders of Ubud.
+                        Our expertly crafted tours are designed to immerse you in the essence of Bali, from the lush
+                        rice
+                        terraces of Ubud to the iconic sights of Nusa Penida.
+                    </p>
+                    <p class="text-slate-700 text-lg leading-relaxed mb-6">
+                        With a team of local experts, we are committed to delivering personalized service and
+                        meticulously
+                        planned adventures. Whether you're exploring Ubud’s vibrant culture or enjoying thrilling
+                        activities
+                        across the island, <b>Easy Bali Tour</b> is dedicated to making your Bali journey truly special.
+                    </p>
+                </div>
+
+                <!-- Book Now Button -->
+                <div class="flex justify-end mt-4">
+                    <a href="#contact"
+                        class="bg-emerald-600 hover:bg-emerald-700 text-white px-6 py-3 rounded-lg shadow-lg text-lg transition">
+                        Book Now
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="packages" class="py-10 bg-gray-100 scroll-mt-15" data-aos="fade-up">
+        <div class="max-w-7xl mx-auto px-4">
+            <h4 class="text-center font-semibold text-amber-600 text-md mb-3">Our Exclusive Offers</h4>
+            <h2 class="text-4xl font-extrabold text-center text-blue-600 mb-4">Packages</h2>
+            <h4 class="text-center text-lg text-slate-600 mb-10">
+                Explore our curated packages for an unforgettable Bali experience
+            </h4>
+            <span class="block h-1 bg-blue-500 mx-auto my-10 w-1/2"></span>
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Card Template -->
+                <div id="detail-card" class="detail-card bg-white rounded-2xl shadow-lg overflow-hidden flex flex-col h-[480px] cursor-pointer" data-aos="fade-up">
+                    <!-- 50% Gambar -->
+                    <div class="h-1/2 w-full overflow-hidden">
+                        <img src="assets/img/kuta.jpg" alt="3-Day Bali Explore"
+                            class="w-full h-full object-cover transition duration-300 hover:scale-105" />
+                    </div>
+                    <!-- 50% Konten -->
+                    <div class="flex flex-col flex-1 p-5 justify-between">
+                        <div>
+                            <h3 class="text-xl font-bold text-blue-500 mb-2">3-Day Bali Explore</h3>
+                            <p class="text-slate-700 text-sm mb-4">Explore Ubud to Uluwatu with guide & transport
+                                included.</p>
+                            <div class="flex items-center justify-between mb-4">
+                                <span class="text-yellow-400 text-base">⭐⭐⭐⭐☆</span>
+                                <span class="text-blue-600 font-bold text-lg">Rp2.500.000</span>
+                            </div>
+                        </div>
+                        <a href="#contact"
+                            class="bg-blue-500 hover:bg-blue-600 text-white py-2 rounded-lg text-center transition">Book
+                            Now</a>
+                    </div>
+                </div>
+
+                <div id="detail-card" class="detail-card bg-white rounded-2xl shadow-lg overflow-hidden flex flex-col h-[480px] cursor-pointer" data-aos="fade-up"
+                    data-aos-delay="100">
+                    <div class="h-1/2 w-full overflow-hidden">
+                        <img src="assets/img/honeymoon.jpg" alt="Honeymoon Package"
+                            class="w-full h-full object-cover transition duration-300 hover:scale-105" />
+                    </div>
+                    <div class="flex flex-col flex-1 p-5 justify-between">
+                        <div>
+                            <h3 class="text-xl font-bold text-blue-500 mb-2">Honeymoon Package</h3>
+                            <p class="text-slate-700 text-sm mb-4">Romantic 4D3N tour w/ hotel & candlelight dinner.</p>
+                            <div class="flex items-center justify-between mb-4">
+                                <span class="text-yellow-400 text-base">⭐⭐⭐⭐⭐</span>
+                                <span class="text-blue-600 font-bold text-lg">Rp4.200.000</span>
+                            </div>
+                        </div>
+                        <a href="#contact"
+                            class="bg-blue-500 hover:bg-blue-600 text-white py-2 rounded-lg text-center transition">Book
+                            Now</a>
+                    </div>
+                </div>
+
+                <div id="detail-card" class="detail-card bg-white rounded-2xl shadow-lg overflow-hidden flex flex-col h-[480px] cursor-pointer" data-aos="fade-up"
+                    data-aos-delay="200">
+                    <div class="h-1/2 w-full overflow-hidden">
+                        <img src="assets/img/adventure.jpg" alt="Adventure Tour"
+                            class="w-full h-full object-cover transition duration-300 hover:scale-105" />
+                    </div>
+                    <div class="flex flex-col flex-1 p-5 justify-between">
+                        <div>
+                            <h3 class="text-xl font-bold text-blue-500 mb-2">Adventure Tour</h3>
+                            <p class="text-slate-700 text-sm mb-4">Rafting, ATV & Mount Batur hike – all-in thrill!</p>
+                            <div class="flex items-center justify-between mb-4">
+                                <span class="text-yellow-400 text-base">⭐⭐⭐⭐☆</span>
+                                <span class="text-blue-600 font-bold text-lg">Rp3.000.000</span>
+                            </div>
+                        </div>
+                        <a href="#contact"
+                            class="bg-blue-500 hover:bg-blue-600 text-white py-2 rounded-lg text-center transition">Book
+                            Now</a>
+                    </div>
+                </div>
+                <div id="detail-card" class="detail-card bg-white rounded-2xl shadow-lg overflow-hidden flex flex-col h-[480px] cursor-pointer" data-aos="fade-up"
+                    data-aos-delay="200">
+                    <div class="h-1/2 w-full overflow-hidden">
+                        <img src="assets/img/adventure.jpg" alt="Adventure Tour"
+                            class="w-full h-full object-cover transition duration-300 hover:scale-105" />
+                    </div>
+                    <div class="flex flex-col flex-1 p-5 justify-between">
+                        <div>
+                            <h3 class="text-xl font-bold text-blue-500 mb-2">Adventure Tour</h3>
+                            <p class="text-slate-700 text-sm mb-4">Rafting, ATV & Mount Batur hike – all-in thrill!</p>
+                            <div class="flex items-center justify-between mb-4">
+                                <span class="text-yellow-400 text-base">⭐⭐⭐⭐☆</span>
+                                <span class="text-blue-600 font-bold text-lg">Rp3.000.000</span>
+                            </div>
+                        </div>
+                        <a href="#contact"
+                            class="bg-blue-500 hover:bg-blue-600 text-white py-2 rounded-lg text-center transition">Book
+                            Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tombol Discover -->
+            <div class="mt-12 flex justify-center">
+                <a href="#contact"
+                    class="bg-amber-500 hover:bg-amber-600 text-white text-lg font-semibold px-8 py-3 rounded-full shadow-md transition">
+                    Discover More
+                </a>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+    <!-- Testimonials -->
+    <section class="py-16 bg-white scroll-mt-15" data-aos="fade-up">
+        <div class="max-w-8xl mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold text-blue-600 mb-10">What Our Clients Say</h2>
+            <!-- Swiper -->
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper py-5 my-5">
+                    <!-- Slide 1 -->
+                    <div class="swiper-slide bg-white p-6 rounded-lg shadow-md">
+                        <p class="text-slate-600 italic">"Super satisfied! Friendly tour guide and amazing route."</p>
+                        <h4 class="mt-4 font-semibold text-blue-500">– Rina, Jakarta</h4>
+                    </div>
+                    <!-- Slide 2 -->
+                    <div class="swiper-slide bg-white p-6 rounded-lg shadow-md">
+                        <p class="text-slate-600 italic">"Top-notch service! Easy booking and flexible itinerary."</p>
+                        <h4 class="mt-4 font-semibold text-blue-500">– Andi, Surabaya</h4>
+                    </div>
+                    <!-- Slide 3 -->
+                    <div class="swiper-slide bg-white p-6 rounded-lg shadow-md">
+                        <p class="text-slate-600 italic">"Nusa Penida tour with EasyBalitour was unforgettable!"</p>
+                        <h4 class="mt-4 font-semibold text-blue-500">– Sarah, Bandung</h4>
+                    </div>
+                    <!-- Slide 1 -->
+                    <div class="swiper-slide bg-white p-6 rounded-lg shadow-md">
+                        <p class="text-slate-600 italic">"Super satisfied! Friendly tour guide and amazing route."</p>
+                        <h4 class="mt-4 font-semibold text-blue-500">– Rina, Jakarta</h4>
+                    </div>
+                    <!-- Slide 2 -->
+                    <div class="swiper-slide bg-white p-6 rounded-lg shadow-md">
+                        <p class="text-slate-600 italic">"Top-notch service! Easy booking and flexible itinerary."</p>
+                        <h4 class="mt-4 font-semibold text-blue-500">– Andi, Surabaya</h4>
+                    </div>
+                    <!-- Slide 3 -->
+                    <div class="swiper-slide bg-white p-6 rounded-lg shadow-md">
+                        <p class="text-slate-600 italic">"Nusa Penida tour with EasyBalitour was unforgettable!"</p>
+                        <h4 class="mt-4 font-semibold text-blue-500">– Sarah, Bandung</h4>
+                    </div>
+                </div>
+
+                <!-- If you want navigation buttons -->
+                <div class="swiper-button-next "></div>
+                <div class="swiper-button-prev"></div>
+
+                <!-- If you want pagination dots -->
+                <div class="swiper-pagination mt-6 opacity-0"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Activities -->
+    <section id="activity" class="py-16 bg-gray-100 scroll-mt-15" data-aos="fade-up">
+        <div class="max-w-7xl mx-auto px-4">
+            <h4 class="text-center font-semibold text-amber-600 text-md mb-3">Our Fun Activities</h4>
+            <h2 class="text-4xl font-extrabold text-center text-blue-600 mb-4">Activities</h2>
+            <h4 class="text-center text-lg text-slate-600 mb-10">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed, placeat. Excepturi natus repudiandae neque repellendus accusantium nobis quae asperiores hic reprehenderit illum accusamus, maiores, suscipit similique eveniet dolor! Placeat, ea.</h4>
+            <span class="block h-1 bg-blue-500 mx-auto my-10 w-1/2"></span>
+            <div class="grid md:grid-cols-3 gap-8">
+
+                <!-- Snorkeling -->
+                <div id="detail-card" class="detail-card bg-white rounded-2xl shadow-lg overflow-hidden flex flex-col cursor-pointer" data-aos="fade-up"
+                    data-aos-delay="100">
+                    <img src="assets/img/renang.jpg" alt="Snorkeling tour"
+                        class="w-full h-72 object-cover transition duration-300 hover:scale-105">
+                    <div class="flex flex-col flex-1 p-5 justify-between">
+                        <div>
+                            <h3 class="text-xl font-bold text-blue-500 mb-2">Snorkeling tour</h3>
+                            <p class="text-slate-700 text-sm mb-3">Half-day snorkeling in Nusa Penida with gear & lunch.
+                            </p>
+                            <p class="text-lg font-bold text-blue-600 mb-4">Rp850.000</p>
+                        </div>
+                        <a href="#contact"
+                            class="bg-blue-500 hover:bg-blue-600 text-white py-2 rounded-lg transition text-center">Book
+                            Now</a>
+                    </div>
+                </div>
+
+                <!-- Cooking Class -->
+                <div id="detail-card" class="detail-card bg-white rounded-2xl shadow-lg overflow-hidden flex flex-col cursor-pointer" data-aos="fade-up"
+                    data-aos-delay="200">
+                    <img src="assets/img/masak.jpg" alt="Balinese Cooking Class"
+                        class="w-full h-72 object-cover transition duration-300 hover:scale-105">
+                    <div class="flex flex-col flex-1 p-5 justify-between">
+                        <div>
+                            <h3 class="text-xl font-bold text-blue-500 mb-2">Balinese Cooking Class</h3>
+                            <p class="text-slate-700 text-sm mb-3">Learn authentic Balinese recipes with local chefs.
+                            </p>
+                            <p class="text-lg font-bold text-blue-600 mb-4">Rp600.000</p>
+                        </div>
+                        <a href="#contact"
+                            class="bg-blue-500 hover:bg-blue-600 text-white py-2 rounded-lg transition text-center">Book
+                            Now</a>
+                    </div>
+                </div>
+
+                <!-- Yoga -->
+                <div id="detail-card" class="detail-card bg-white rounded-2xl shadow-lg overflow-hidden flex flex-col cursor-pointer" data-aos="fade-up"
+                    data-aos-delay="300">
+                    <img src="assets/img/yoga.jpg" alt="Sunset Yoga"
+                        class="w-full h-72 object-cover transition duration-300 hover:scale-105">
+                    <div class="flex flex-col flex-1 p-5 justify-between">
+                        <div>
+                            <h3 class="text-xl font-bold text-blue-500 mb-2">Sunset Yoga</h3>
+                            <p class="text-slate-700 text-sm mb-3">Relaxing yoga session by the beach at sunset.</p>
+                            <p class="text-lg font-bold text-blue-600 mb-4">Rp350.000</p>
+                        </div>
+                        <a href="#contact"
+                            class="bg-blue-500 hover:bg-blue-600 text-white py-2 rounded-lg transition text-center">Book
+                            Now</a>
+                    </div>
+                </div>
+
+                <!-- Snorkeling -->
+                <div id="detail-card" class="detail-card bg-white rounded-2xl shadow-lg overflow-hidden flex flex-col cursor-pointer" data-aos="fade-up"
+                    data-aos-delay="100">
+                    <img src="assets/img/renang.jpg" alt="Snorkeling tour"
+                        class="w-full h-72 object-cover transition duration-300 hover:scale-105">
+                    <div class="flex flex-col flex-1 p-5 justify-between">
+                        <div>
+                            <h3 class="text-xl font-bold text-blue-500 mb-2">Snorkeling tour</h3>
+                            <p class="text-slate-700 text-sm mb-3">Half-day snorkeling in Nusa Penida with gear & lunch.
+                            </p>
+                            <p class="text-lg font-bold text-blue-600 mb-4">Rp850.000</p>
+                        </div>
+                        <a href="#contact"
+                            class="bg-blue-500 hover:bg-blue-600 text-white py-2 rounded-lg transition text-center">Book
+                            Now</a>
+                    </div>
+                </div>
+
+                <!-- Cooking Class -->
+                <div id="detail-card" class="detail-card bg-white rounded-2xl shadow-lg overflow-hidden flex flex-col cursor-pointer" data-aos="fade-up"
+                    data-aos-delay="200">
+                    <img src="assets/img/masak.jpg" alt="Balinese Cooking Class"
+                        class="w-full h-72 object-cover transition duration-300 hover:scale-105">
+                    <div class="flex flex-col flex-1 p-5 justify-between">
+                        <div>
+                            <h3 class="text-xl font-bold text-blue-500 mb-2">Balinese Cooking Class</h3>
+                            <p class="text-slate-700 text-sm mb-3">Learn authentic Balinese recipes with local chefs.
+                            </p>
+                            <p class="text-lg font-bold text-blue-600 mb-4">Rp600.000</p>
+                        </div>
+                        <a href="#contact"
+                            class="bg-blue-500 hover:bg-blue-600 text-white py-2 rounded-lg transition text-center">Book
+                            Now</a>
+                    </div>
+                </div>
+
+                <!-- Yoga -->
+                <div id="detail-card" class="detail-card bg-white rounded-2xl shadow-lg overflow-hidden flex flex-col cursor-pointer" data-aos="fade-up"
+                    data-aos-delay="300">
+                    <img src="assets/img/yoga.jpg" alt="Sunset Yoga"
+                        class="w-full h-72 object-cover transition duration-300 hover:scale-105">
+                    <div class="flex flex-col flex-1 p-5 justify-between">
+                        <div>
+                            <h3 class="text-xl font-bold text-blue-500 mb-2">Sunset Yoga</h3>
+                            <p class="text-slate-700 text-sm mb-3">Relaxing yoga session by the beach at sunset.</p>
+                            <p class="text-lg font-bold text-blue-600 mb-4">Rp350.000</p>
+                        </div>
+                        <a href="#contact"
+                            class="bg-blue-500 hover:bg-blue-600 text-white py-2 rounded-lg transition text-center">Book
+                            Now</a>
+                    </div>
+                </div>
+
+            </div>
+            <!-- Discover More Button -->
+            <div class="mt-12 flex justify-center">
+                <a href="#contact"
+                    class="bg-amber-500 hover:bg-amber-600 text-white text-lg font-semibold px-8 py-3 rounded-full shadow-md transition">
+                    Discover More
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Galery -->
+    <section>
+        <div class="max-w-7xl mx-auto px-4 py-16">
+            <h2 class="text-3xl font-bold text-center text-blue-600 mb-10">Gallery</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+                <img src="assets/img/galery (1).jpg" alt="Gallery Image 1"
+                    class="w-full h-64 object-cover rounded-lg shadow-md transition-transform duration-300 hover:scale-105">
+                <img src="assets/img/galery (2).jpg" alt="Gallery Image 2"
+                    class="w-full h-64 object-cover rounded-lg shadow-md transition-transform duration-300 hover:scale-105">
+                <img src="assets/img/galery (3).jpg" alt="Gallery Image 3"
+                    class="w-full h-64 object-cover rounded-lg shadow-md transition-transform duration-300 hover:scale-105">
+                <img src="assets/img/galery (4).jpg" alt="Gallery Image 4"
+                    class="w-full h-64 object-cover rounded-lg shadow-md transition-transform duration-300 hover:scale-105">
+                <img src="assets/img/galery (5).jpg" alt="Gallery Image 5"
+                    class="w-full h-64 object-cover rounded-lg shadow-md transition-transform duration-300 hover:scale-105">
+                <img src="assets/img/galery (1).jpg" alt="Gallery Image 6"
+                    class="w-full h-64 object-cover rounded-lg shadow-md transition-transform duration-300 hover:scale-105">
+            </div>
+        </div>
+        <!-- Discover More Button -->
+        <div class="my-12 flex justify-center">
+            <a href="galery.html"
+                class="bg-amber-500 hover:bg-amber-600 text-white text-lg font-semibold px-8 py-3 rounded-full shadow-md transition">
+                View All Gallery
+            </a>
+        </div>
+    </section>
+
+
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-10">
+            <!-- Left Side (Logo + Description + Socials) -->
+            <div>
+                <div class="flex items-center mb-4">
+                    <img src="assets/img/logo.png" alt="DiBali Tour" class="h-10 mr-3" />
+                    <span class="text-2xl font-bold">Di<span class="text-amber-600">Bali</span></span>
+                </div>
+                <p class="text-slate-300 mb-6 leading-relaxed">
+                    Enjoy unique experiences with the best local guides, captivating itineraries, and quality
+                    accommodations.
+                    Navigate Bali with confidence, as every journey is an unforgettable story. Discover the island’s
+                    charm with us!
+                </p>
+                <div class="flex space-x-4">
+                    <a href="#" aria-label="Facebook"><i
+                            class="fab fa-facebook text-2xl hover:text-blue-500 transition"></i></a>
+                    <a href="#" aria-label="Instagram"><i
+                            class="fab fa-instagram text-2xl hover:text-blue-500 transition"></i></a>
+                    <a href="#" aria-label="TikTok"><i
+                            class="fab fa-tiktok text-2xl hover:text-blue-500 transition"></i></a>
+                </div>
+            </div>
+
+            <!-- Right Side (Contact Info) -->
+            <div>
+                <h3 class="text-xl font-semibold text-white mb-6">Contact Info</h3>
+                <ul class="space-y-5 text-slate-300">
+                    <li class="flex items-start">
+                        <i class="fas fa-map-marker-alt mt-1 mr-3 text-blue-500"></i>
+                        <span>
+                            Perumahan Taman Sakura Regency,<br>
+                            Jl. Karang Mas No.6 Block C, Jimbaran, Bali 80361
+                        </span>
+                    </li>
+                    <li class="flex items-center">
+                        <i class="fab fa-whatsapp mr-3 text-blue-500"></i>
+                        <a href="https://wa.me/6281805424181" class="hover:underline">+62 818-0542-4181</a>
+                    </li>
+                    <li class="flex items-center">
+                        <i class="fas fa-envelope mr-3 text-blue-500"></i>
+                        <a href="mailto:info@dibalitour.com" class="hover:underline">info@dibalitour.com</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+    <!-- AOS Script -->
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="assets/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+</body>
+
+</html>

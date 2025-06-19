@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Easy Bali Tour</title>
+
+    <!-- Tailwind CSS -->
+    <link rel="stylesheet" href="assets/output.css" />
+
+    <!-- Fonts & Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+
+<body class="text-slate-600">
+
+    <!-- ================== NAVBAR ================== -->
+    <header id="navbar" class="fixed top-0 w-full z-50 bg-transparent transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+            <h1 class="text-xl font-bold text-teal-600">Easy Bali Tour</h1>
+
+            <!-- Hamburger -->
+            <button title="button" id="menu-btn" class="md:hidden text-teal-600 focus:outline-none text-2xl">
+                <i class="fas fa-bars"></i>
+            </button>
+
+            <!-- Desktop Menu -->
+            <nav class="hidden md:flex space-x-6">
+                <a href="index.html" class="font-semibold hover:text-teal-500 transition">Home</a>
+                <a href="#destinations" class="font-semibold hover:text-teal-500 transition">Destinations</a>
+                <a href="menu.html" class="font-semibold hover:text-teal-500 transition">Packages</a>
+                <a href="menu.html" class="font-semibold hover:text-teal-500 transition">Activity</a>
+                <a href="galery.html" class="font-semibold hover:text-teal-500 transition">Galery</a>
+                <a href="contact.html" class="font-semibold hover:text-teal-500 transition">Contact</a>
+            </nav>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="md:hidden hidden flex-col bg-white px-4 pb-4">
+            <a href="#index.html" class="py-2 border-b hover:text-teal-500">Home</a>
+            <a href="#destinations" class="py-2 border-b hover:text-teal-500">Destinations</a>
+            <a href="menu.html" class="py-2 border-b hover:text-teal-500">Packages</a>
+            <a href="menu.html" class="py-2 border-b hover:text-teal-500">Activity</a>
+            <a href="galery.html" class="py-2 border-b hover:text-teal-500">Galery</a>
+            <a href="contact.html" class="py-2 border-b hover:text-teal-500">Contact</a>
+        </div>
+    </header>
+
+    <!-- ========== HERO GALERY (judul + bg) ========== -->
+    <section id="galery"
+        class="relative h-[40vh] bg-[url('assets/img/ubud.jpg')] flex items-center justify-center bg-cover bg-center bg-no-repeat">
+        <!-- overlay gelap biar teks kontras -->
+        <div class="absolute inset-0 bg-black/50"></div>
+
+        <div class="relative z-10 text-center px-6">
+            <h2 class="text-4xl md:text-5xl font-extrabold text-white mb-4">Galery</h2>
+            <p class="text-lg md:text-xl text-white">
+                Moments from our unforgettable Bali tours
+            </p>
+        </div>
+    </section>
+
+    <!-- ========== GRID FOTO GALERY ========== -->
+    <section id="galery-photos" class="py-16 bg-white" data-aos="fade-up">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
+                <!-- Foto 1 -->
+                <div class="overflow-hidden rounded-xl shadow">
+                    <img src="assets/img/galery (1).jpg" alt="Galery image 1"
+                        class="w-full h-full object-cover hover:scale-105 transition duration-300">
+                </div>
+                <!-- Foto 2 -->
+                <div class="overflow-hidden rounded-xl shadow">
+                    <img src="assets/img/galery (2).jpg" alt="Galery image 2"
+                        class="w-full h-full object-cover hover:scale-105 transition duration-300">
+                </div>
+                <!-- Foto 3 -->
+                <div class="overflow-hidden rounded-xl shadow">
+                    <img src="assets/img/galery (3).jpg" alt="Galery image 3"
+                        class="w-full h-full object-cover hover:scale-105 transition duration-300">
+                </div>
+                <!-- Foto 4 -->
+                <div class="overflow-hidden rounded-xl shadow">
+                    <img src="assets/img/galery (4).jpg" alt="Galery image 4"
+                        class="w-full h-full object-cover hover:scale-105 transition duration-300">
+                </div>
+                <!-- Foto 5 -->
+                <div class="overflow-hidden rounded-xl shadow">
+                    <img src="assets/img/galery (5).jpg" alt="Galery image 5"
+                        class="w-full h-full object-cover hover:scale-105 transition duration-300">
+                </div>
+                <!-- Foto 1 -->
+                <div class="overflow-hidden rounded-xl shadow">
+                    <img src="assets/img/galery (1).jpg" alt="Galery image 1"
+                        class="w-full h-full object-cover hover:scale-105 transition duration-300">
+                </div>
+                <!-- Foto 2 -->
+                <div class="overflow-hidden rounded-xl shadow">
+                    <img src="assets/img/galery (2).jpg" alt="Galery image 2"
+                        class="w-full h-full object-cover hover:scale-105 transition duration-300">
+                </div>
+                <!-- Foto 3 -->
+                <div class="overflow-hidden rounded-xl shadow">
+                    <img src="assets/img/galery (3).jpg" alt="Galery image 3"
+                        class="w-full h-full object-cover hover:scale-105 transition duration-300">
+                </div>
+                <!-- Foto 4 -->
+                <div class="overflow-hidden rounded-xl shadow">
+                    <img src="assets/img/galery (4).jpg" alt="Galery image 4"
+                        class="w-full h-full object-cover hover:scale-105 transition duration-300">
+                </div>
+                <!-- Foto 5 -->
+                <div class="overflow-hidden rounded-xl shadow">
+                    <img src="assets/img/galery (5).jpg" alt="Galery image 5"
+                        class="w-full h-full object-cover hover:scale-105 transition duration-300">
+                </div>
+                <!-- Foto 1 -->
+                <div class="overflow-hidden rounded-xl shadow">
+                    <img src="assets/img/galery (1).jpg" alt="Galery image 1"
+                        class="w-full h-full object-cover hover:scale-105 transition duration-300">
+                </div>
+                <!-- Foto 2 -->
+                <div class="overflow-hidden rounded-xl shadow">
+                    <img src="assets/img/galery (2).jpg" alt="Galery image 2"
+                        class="w-full h-full object-cover hover:scale-105 transition duration-300">
+                </div>
+                <!-- Foto 3 -->
+                <div class="overflow-hidden rounded-xl shadow">
+                    <img src="assets/img/galery (3).jpg" alt="Galery image 3"
+                        class="w-full h-full object-cover hover:scale-105 transition duration-300">
+                </div>
+                <!-- Foto 4 -->
+                <div class="overflow-hidden rounded-xl shadow">
+                    <img src="assets/img/galery (4).jpg" alt="Galery image 4"
+                        class="w-full h-full object-cover hover:scale-105 transition duration-300">
+                </div>
+                <!-- Foto 5 -->
+                <div class="overflow-hidden rounded-xl shadow">
+                    <img src="assets/img/galery (5).jpg" alt="Galery image 5"
+                        class="w-full h-full object-cover hover:scale-105 transition duration-300">
+                </div>
+                <!-- tambah foto lagi bila perlu -->
+            </div>
+        </div>
+    </section>
+
+    <!-- AOS Script -->
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="assets/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+</body>
+
+</html>
